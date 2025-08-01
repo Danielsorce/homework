@@ -6,13 +6,13 @@ public class Task_6 {
     Яйца: 4 штуки × 70 грамм */
     public static void main(String[] args) {
 
-        int Bananas = 5,
-                iceCreamBriquettes = 2,
-                Eggs = 4;
-        double bananasGram = 80,
-                milk100MlGram = 105,
-                iceCreamBriquetteGram = 100,
-                EggGram = 70;
+        byte Bananas = 5;
+        byte iceCreamBriquettes = 2;
+        byte Eggs = 4;
+        byte bananasGram = 80;
+        byte milk100MlGram = 105;
+        byte iceCreamBriquetteGram = 100;
+        byte EggGram = 70;
 
         double bananasAllGrams = Bananas * bananasGram;
         double milkAllGrams = milk100MlGram * 2;
@@ -21,8 +21,8 @@ public class Task_6 {
 
         System.out.println("Общая пищевая ценность в граммах: ");
 
-        double[] beer = {bananasAllGrams, milkAllGrams, iceCreamAllGrams, EggAllGrams};
-        for (double x : beer) {
+        double[] allNutritionalValueInGram = {bananasAllGrams, milkAllGrams, iceCreamAllGrams, EggAllGrams};
+        for (double x : allNutritionalValueInGram) {
             System.out.println(x + " грамм.");
         }
 
@@ -33,8 +33,8 @@ public class Task_6 {
 
         System.out.println("Общая пищевая ценность в килограммах:");
 
-        double[] wine = {bananasInKg, milkInKg, iceCreamInKg, EggInKg};
-        for (double x : wine) {
+        double[] allNutritionalValueInKg = {bananasInKg, milkInKg, iceCreamInKg, EggInKg};
+        for (double x : allNutritionalValueInKg) {
             System.out.println(x + " кг.");
         }
     }

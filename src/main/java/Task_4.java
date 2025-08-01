@@ -6,12 +6,12 @@ public class Task_4 {
     Производительность за 1 месяц (30 дней) */
     public static void main(String[] args) {
 
-        int bottlesPer2Minutes = 16,
-                Minutes = 2,
-                per20Minutes = 20,
-                perDay = 1440,
-                per3Days = 3,
-                perMonth = 30;
+        byte bottlesPer2Minutes = 16;
+        byte Minutes = 2;
+        byte per20Minutes = 20;
+        short perDay = 1440;
+        byte per3Days = 3;
+        byte perMonth = 30;
 
         int bottlesPerMinute = bottlesPer2Minutes / Minutes;
         int bottlesPer20Minutes = bottlesPerMinute * per20Minutes;

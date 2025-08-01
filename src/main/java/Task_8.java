@@ -8,9 +8,9 @@ public class Task_8 {
     Разницу в годовом доходе до и после повышения */
     public static void main(String[] args) {
 
-        int mashaSalary = 67760,
-                denisSalary = 83690,
-                christineSalary = 76230;
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int christineSalary = 76230;
         double percentageUp = 0.10;
 
         double mashaSalaryUp = mashaSalary * percentageUp;

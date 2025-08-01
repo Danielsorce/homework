@@ -7,8 +7,8 @@ public class Task_5 {
     Сколько банок каждого цвета было куплено*/
     public static void main(String[] args) {
 
-        int canWhiteColor = 2,
-                canBrownMonster = 4;
+        byte canWhiteColor = 2;
+        byte canBrownMonster = 4;
 
         int classrooms = 120 / (canWhiteColor + canBrownMonster);
         int allCansWhiteColor = canWhiteColor * classrooms;
