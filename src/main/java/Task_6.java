@@ -6,36 +6,36 @@ public class Task_6 {
     Яйца: 4 штуки × 70 грамм */
     public static void main(String[] args) {
 
-        byte Bananas = 5;
-        byte iceCreamBriquettes = 2;
-        byte Eggs = 4;
+        byte bananas = 5;
         byte bananasGram = 80;
         byte milk100MlGram = 105;
+        byte iceCreamBriquettes = 2;
         byte iceCreamBriquetteGram = 100;
-        byte EggGram = 70;
+        byte eggs = 4;
+        byte eggGram = 70;
 
-        double bananasAllGrams = Bananas * bananasGram;
+        double bananasAllGrams = bananas * bananasGram;
         double milkAllGrams = milk100MlGram * 2;
         double iceCreamAllGrams = iceCreamBriquetteGram * iceCreamBriquettes;
-        double  EggAllGrams = Eggs * EggGram;
+        double eggAllGrams = eggs * eggGram;
+        double totalGrams = bananasAllGrams + milkAllGrams + iceCreamAllGrams + eggAllGrams;
 
-        System.out.println("Общая пищевая ценность в граммах: ");
+        System.out.println("Вес бананов в граммах: " + bananasAllGrams);
+        System.out.println("Вес молока в граммах: " + milkAllGrams);
+        System.out.println("Вес яиц в граммах: " + eggAllGrams);
+        System.out.println("Вес мороженного в граммах: " + iceCreamAllGrams);
+        System.out.println("Общий вес в граммах: " + totalGrams);
 
-        double[] allNutritionalValueInGram = {bananasAllGrams, milkAllGrams, iceCreamAllGrams, EggAllGrams};
-        for (double x : allNutritionalValueInGram) {
-            System.out.println(x + " грамм.");
-        }
-
-        double bananasInKg =  bananasAllGrams / 1000;
+        double bananasInKg = bananasAllGrams / 1000;
         double milkInKg = milkAllGrams / 1000;
         double iceCreamInKg = iceCreamAllGrams / 1000;
-        double EggInKg = EggAllGrams / 1000;
+        double eggInKg = eggAllGrams / 1000;
+        double totalInKg = bananasInKg + milkInKg + iceCreamInKg + eggInKg;
 
-        System.out.println("Общая пищевая ценность в килограммах:");
-
-        double[] allNutritionalValueInKg = {bananasInKg, milkInKg, iceCreamInKg, EggInKg};
-        for (double x : allNutritionalValueInKg) {
-            System.out.println(x + " кг.");
-        }
+        System.out.println("Вес бананов в килограммах: " + bananasInKg);
+        System.out.println("Вес молока в килограммах: " + milkInKg);
+        System.out.println("Вес яиц в килограммах: " + eggInKg);
+        System.out.println("Вес мороженного в килограммах: " + iceCreamInKg);
+        System.out.println("Общий вес в килограммах: " + totalInKg);
     }
 }
