@@ -59,27 +59,26 @@ public class Tasks {
 
         //Задача 5. Ограничения на аттракционе
         int childAge = 12;
-        boolean hasParent = true;
 
         if  (childAge < 5) {
             System.out.println("Возраст ребёнка " + childAge + " ему нельзя кататься");
-        } else if (childAge >= 5 && hasParent == true) {
+        } else if (childAge >= 5 & childAge < 14) {
             System.out.println("Возраст ребёнка " + childAge + " ему можно кататься но с сопровождением");
         } else {
             System.out.println("Возраст ребёнка " + childAge + " ему можно кататься без сопровождения");
         }
 
         //Задача 6. Места в вагоне
-        int passengers = 50;
+        int passengers = 52;
 
         int standingPlaces = 60;
         int sitingSeats = 42;
 
         if (passengers < sitingSeats) {
             System.out.println("Есть сидячие места");
-        } else if (passengers < sitingSeats + standingPlaces) {
+        } else if (passengers > sitingSeats & passengers < sitingSeats + standingPlaces) {
             System.out.println("Нет сидячих мест, остались только стоячие места");
-        } else {
+        } else if (passengers >= sitingSeats + standingPlaces) {
             System.out.println("Вагон полон");
         }
 
@@ -102,7 +101,7 @@ public class Tasks {
 
         //Задача 8. Рекомендация мобильного приложения +
         //Задача 9. Рекомендация мобильного приложения
-        System.out.println("Введите вашу ОС");
+        System.out.println("Введите вашу ОС (0-iOS, 1-Android)");
         int clientOS = input.nextInt();
 
         System.out.println("Введите год вашего устройства");
@@ -119,7 +118,7 @@ public class Tasks {
                 default:
                     System.out.println("Приложение не поддерживается на вашей ОС");
             }
-        } else {
+        } else if (clientDeviceYear >= 2015) {
             switch (clientOS) {
                 case 0:
                     System.out.println("Установите версию приложения для [IOS] по ссылке");
@@ -133,7 +132,6 @@ public class Tasks {
         }
 
         //Задача 10. Определение високосного года
-
         int year = 2025;
 
         if (year % 400 == 0) {
